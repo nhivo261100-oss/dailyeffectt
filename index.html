@@ -2,31 +2,43 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Navbar Shopee Style</title>
+<title>Navbar Gilroy</title>
 
 <style>
 
-/* ===== FONT SHOPEE ===== */
+/* ===== FONT SVN GILROY ===== */
 @font-face {
-  font-family: 'Shopee';
-  src: url('./fonts/ShopeeDisplay-Regular.ttf') format('truetype');
+  font-family: 'SVN-Gilroy';
+  src: url('./FONT GILROY/SVN-Gilroy-Regular.otf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Shopee';
-  src: url('./fonts/ShopeeDisplay-Bold.ttf') format('truetype');
+  font-family: 'SVN-Gilroy';
+  src: url('./FONT GILROY/SVN-Gilroy-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('./FONT GILROY/SVN-Gilroy-SemiBold.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('./FONT GILROY/SVN-Gilroy-Bold.otf') format('opentype');
   font-weight: 700;
 }
 
 /* ===== GLOBAL ===== */
 body{
   margin:0;
-  font-family:'Shopee', sans-serif;
+  font-family:'SVN-Gilroy', sans-serif;
   background:#0a0f1c;
 }
 
-/* ===== NAVBAR FULL ===== */
+/* ===== NAVBAR ===== */
 .navbar{
   position:fixed;
   top:0;
@@ -35,7 +47,6 @@ body{
   z-index:1000;
 
   background:linear-gradient(90deg,#091524,#0b1020);
-
   border-bottom:1px solid rgba(0,255,180,0.15);
   overflow:hidden;
 }
@@ -47,8 +58,8 @@ body{
   inset:0;
 
   background-image:
-  linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
 
   background-size:40px 40px;
 }
@@ -86,7 +97,7 @@ body{
   color:#8ea3b7;
   text-decoration:none;
   font-size:13px;
-  font-weight:400;
+  font-weight:500;
   transition:.25s;
 }
 
