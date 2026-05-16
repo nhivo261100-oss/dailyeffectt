@@ -1,135 +1,41 @@
+<style>
+
+/* ===== FONT SVN GILROY ===== */
 @font-face {
   font-family: 'SVN-Gilroy';
-  src: url('./fonts/SVN-Gilroy-Regular.otf') format('opentype');
+  src: url('./fonts/SVN-GilroyRegular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SVN-Gilroy';
-  src: url('./fonts/SVN-Gilroy-Medium.otf') format('opentype');
+  src: url('./fonts/SVN-GilroyMedium.otf') format('opentype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'SVN-Gilroy';
-  src: url('./fonts/SVN-Gilroy-SemiBold.otf') format('opentype');
+  src: url('./fonts/SVN-GilroySemiBold.otf') format('opentype');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'SVN-Gilroy';
-  src: url('./fonts/SVN-Gilroy-Bold.otf') format('opentype');
+  src: url('./fonts/SVN-GilroyBold.otf') format('opentype');
   font-weight: 700;
 }
 
-/* italic */
 @font-face {
   font-family: 'SVN-Gilroy';
-  src: url('./fonts/SVN-Gilroy-BlackItalic.otf') format('opentype');
+  src: url('./fonts/SVN-GilroyBlack.otf') format('opentype');
   font-weight: 900;
-  font-style: italic;
 }
 
-/* ===== NAVBAR ===== */
-.navbar{
-  position:fixed;
-  top:0;
-  width:100%;
-  height:70px;
-  z-index:1000;
-
-  background:linear-gradient(90deg,#091524,#0b1020);
-  border-bottom:1px solid rgba(0,255,180,0.15);
-}
-
-/* GRID */
-.navbar::before{
-  content:"";
-  position:absolute;
-  inset:0;
-
-  background-image:
-    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-
-  background-size:40px 40px;
-}
-
-/* ===== KHUNG GIỮA ===== */
-.nav-inner{
-  width:33%;
-  min-width:1050px;
-
-  height:100%;
-  margin:auto;
-
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-
-  position:relative;
-  z-index:2;
-}
-
-/* ===== LOGO ===== */
-.logo{
-  color:#fff;
-  font-size:20px;
-  font-weight:700;
-}
-
-/* ===== MENU ===== */
-.menu{
-  display:flex;
-  gap:28px;
-}
-
-.menu a{
-  color:#8ea3b7;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:500;
-  transition:.25s;
-}
-
-.menu a:hover{
-  color:#fff;
-}
-
-/* ===== RIGHT ===== */
-.right{
-  display:flex;
-  align-items:center;
-  gap:18px;
-}
-
-.ai{
-  color:#00f5a0;
-  font-size:13px;
-  font-weight:600;
-}
-
-.btn{
-  background:linear-gradient(135deg,#00ffb3,#00c97b);
-  color:#001a11;
-
-  padding:8px 18px;
-  border-radius:999px;
-
-  font-size:13px;
-  font-weight:700;
-}
-
-/* ===== SECTION TEST ===== */
-section{
-  height:100vh;
-  padding-top:100px;
-  color:white;
-  text-align:center;
-}
-
-</style>
+/* ===== GLOBAL ===== */
+body{
+  margin:0;
+  font-family:'SVN-Gilroy', sans-serif;
   background:#0a0f1c;
 }
 
