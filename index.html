@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Navbar Scroll</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #0b1c2c, #0f2e3f);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+    z-index: 1000;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 30px;
+  }
+
+  .menu a {
+    color: #cfd8dc;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .menu a:hover {
+    color: #00e5ff;
+  }
+
+  /* BUTTON */
+  .btn {
+    background: #00c853;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+  }
+
+  /* SECTION */
+  section {
+    height: 100vh;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #boicanh { background: #e3f2fd; }
+  #thitruong { background: #fce4ec; }
+  #hientrang { background: #e8f5e9; }
+  #giaiphap { background: #fff3e0; }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">DailyEffect</div>
+
+  <div class="menu">
+    <a href="#boicanh">Bối cảnh</a>
+    <a href="#thitruong">Thị trường</a>
+    <a href="#hientrang">Hiện trạng</a>
+    <a href="#giaiphap">Giải pháp</a>
+  </div>
+
+  <div class="btn">Guideline</div>
+</div>
+
+<!-- CONTENT -->
+<section id="boicanh">Bối cảnh</section>
+<section id="thitruong">Thị trường</section>
+<section id="hientrang">Hiện trạng</section>
+<section id="giaiphap">Giải pháp</section>
+
+</body>
+</html>
