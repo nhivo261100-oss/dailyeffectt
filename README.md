@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Navbar Tech</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #0a0f1c;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: white;
+  z-index: 1000;
+
+  /* gradient nền */
+  background: linear-gradient(90deg, #0b1c2c, #0a0f1c);
+
+  /* grid overlay */
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* LOGO */
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  gap: 28px;
+}
+
+.menu a {
+  color: #9fb3c8;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+/* RIGHT */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ai {
+  color: #00ffa3;
+  font-size: 13px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #00ffa3, #00c853);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #001b12;
+  font-weight: 600;
+}
+
+/* SECTION TEST */
+section {
+  height: 100vh;
+  padding-top: 100px;
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">DailyEffect</div>
+
+  <div class="menu">
+    <a href="#boicanh">Bối cảnh</a>
+    <a href="#thitruong">Thị trường</a>
+    <a href="#hientrang">Hiện trạng</a>
+    <a href="#giaiphap">Giải pháp</a>
+    <a href="#review">Review & Duyệt</a>
+    <a href="#lotrinh">Lộ trình</a>
+  </div>
+
+  <div class="right">
+    <div class="ai">✦ AI Studio</div>
+    <div class="btn">Guideline</div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<section id="boicanh">Bối cảnh</section>
+<section id="thitruong">Thị trường</section>
+<section id="hientrang">Hiện trạng</section>
+<section id="giaiphap">Giải pháp</section>
+<section id="review">Review</section>
+<section id="lotrinh">Lộ trình</section>
+
+</body>
+</html>
