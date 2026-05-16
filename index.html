@@ -1,5 +1,12 @@
+<!DOCTYPE html>
+<html lang="vi">
 <head>
+<meta charset="UTF-8">
+<title>Navbar Shopee Style</title>
+
 <style>
+
+/* ===== FONT SHOPEE ===== */
 @font-face {
   font-family: 'Shopee';
   src: url('./fonts/ShopeeDisplay-Regular.ttf') format('truetype');
@@ -11,24 +18,29 @@
   src: url('./fonts/ShopeeDisplay-Bold.ttf') format('truetype');
   font-weight: 700;
 }
-</style>
-</head>
 
+/* ===== GLOBAL ===== */
+body{
+  margin:0;
+  font-family:'Shopee', sans-serif;
+  background:#0a0f1c;
+}
+
+/* ===== NAVBAR FULL ===== */
 .navbar{
   position:fixed;
   top:0;
   width:100%;
   height:70px;
+  z-index:1000;
 
-  background:
-  linear-gradient(90deg,#091524,#0b1020);
+  background:linear-gradient(90deg,#091524,#0b1020);
 
   border-bottom:1px solid rgba(0,255,180,0.15);
-
   overflow:hidden;
 }
 
-/* grid background */
+/* GRID BACKGROUND */
 .navbar::before{
   content:"";
   position:absolute;
@@ -39,11 +51,9 @@
   linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
 
   background-size:40px 40px;
-
-  opacity:.7;
 }
 
-/* khung giữa */
+/* ===== KHUNG GIỮA 1/3 ===== */
 .nav-inner{
   position:relative;
   z-index:2;
@@ -59,14 +69,14 @@
   justify-content:space-between;
 }
 
-/* logo */
+/* ===== LOGO ===== */
 .logo{
   color:#fff;
   font-size:20px;
-  font-family:'Gilroy-Bold',sans-serif;
+  font-weight:700;
 }
 
-/* menu */
+/* ===== MENU ===== */
 .menu{
   display:flex;
   gap:28px;
@@ -76,8 +86,7 @@
   color:#8ea3b7;
   text-decoration:none;
   font-size:13px;
-  font-family:'Gilroy-Medium',sans-serif;
-
+  font-weight:400;
   transition:.25s;
 }
 
@@ -85,7 +94,7 @@
   color:#fff;
 }
 
-/* right */
+/* ===== RIGHT ===== */
 .right{
   display:flex;
   align-items:center;
@@ -95,23 +104,61 @@
 .ai{
   color:#00f5a0;
   font-size:13px;
-  font-family:'Gilroy-SemiBold',sans-serif;
+  font-weight:600;
 }
 
 .btn{
   background:linear-gradient(135deg,#00ffb3,#00c97b);
-
   color:#001a11;
 
   padding:8px 18px;
-
   border-radius:999px;
 
   font-size:13px;
+  font-weight:700;
+}
 
-  font-family:'Gilroy-Bold',sans-serif;
+/* ===== SECTION TEST ===== */
+section{
+  height:100vh;
+  padding-top:100px;
+  color:white;
+  text-align:center;
 }
 
 </style>
-
 </head>
+
+<body>
+
+<div class="navbar">
+  <div class="nav-inner">
+
+    <div class="logo">DailyEffect</div>
+
+    <div class="menu">
+      <a href="#boicanh">Bối cảnh</a>
+      <a href="#thitruong">Thị trường</a>
+      <a href="#hientrang">Hiện trạng</a>
+      <a href="#giaiphap">Giải pháp</a>
+      <a href="#review">Review & Duyệt</a>
+      <a href="#lotrinh">Lộ trình</a>
+    </div>
+
+    <div class="right">
+      <div class="ai">✦ AI Studio</div>
+      <div class="btn">Guideline</div>
+    </div>
+
+  </div>
+</div>
+
+<section id="boicanh">Bối cảnh</section>
+<section id="thitruong">Thị trường</section>
+<section id="hientrang">Hiện trạng</section>
+<section id="giaiphap">Giải pháp</section>
+<section id="review">Review</section>
+<section id="lotrinh">Lộ trình</section>
+
+</body>
+</html>
