@@ -2,78 +2,95 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Navbar Scroll</title>
+<title>Navbar Tech</title>
 
 <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-  }
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #0a0f1c;
+}
 
-  /* NAVBAR */
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(90deg, #0b1c2c, #0f2e3f);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    color: white;
-    z-index: 1000;
-  }
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: white;
+  z-index: 1000;
 
-  .logo {
-    font-weight: bold;
-    font-size: 20px;
-  }
+  /* gradient nền */
+  background: linear-gradient(90deg, #0b1c2c, #0a0f1c);
 
-  .menu {
-    display: flex;
-    gap: 30px;
-  }
+  /* grid overlay */
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
 
-  .menu a {
-    color: #cfd8dc;
-    text-decoration: none;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+/* LOGO */
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
 
-  .menu a:hover {
-    color: #00e5ff;
-  }
+/* MENU */
+.menu {
+  display: flex;
+  gap: 28px;
+}
 
-  /* BUTTON */
-  .btn {
-    background: #00c853;
-    padding: 8px 16px;
-    border-radius: 20px;
-    color: white;
-    font-size: 14px;
-  }
+.menu a {
+  color: #9fb3c8;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
 
-  /* SECTION */
-  section {
-    height: 100vh;
-    padding-top: 100px;
-    text-align: center;
-    font-size: 30px;
-  }
+.menu a:hover {
+  color: #ffffff;
+}
 
-  #boicanh { background: #e3f2fd; }
-  #thitruong { background: #fce4ec; }
-  #hientrang { background: #e8f5e9; }
-  #giaiphap { background: #fff3e0; }
+/* RIGHT */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ai {
+  color: #00ffa3;
+  font-size: 13px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #00ffa3, #00c853);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #001b12;
+  font-weight: 600;
+}
+
+/* SECTION TEST */
+section {
+  height: 100vh;
+  padding-top: 100px;
+  color: white;
+  text-align: center;
+}
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
   <div class="logo">DailyEffect</div>
 
@@ -82,9 +99,14 @@
     <a href="#thitruong">Thị trường</a>
     <a href="#hientrang">Hiện trạng</a>
     <a href="#giaiphap">Giải pháp</a>
+    <a href="#review">Review & Duyệt</a>
+    <a href="#lotrinh">Lộ trình</a>
   </div>
 
-  <div class="btn">Guideline</div>
+  <div class="right">
+    <div class="ai">✦ AI Studio</div>
+    <div class="btn">Guideline</div>
+  </div>
 </div>
 
 <!-- CONTENT -->
@@ -92,6 +114,8 @@
 <section id="thitruong">Thị trường</section>
 <section id="hientrang">Hiện trạng</section>
 <section id="giaiphap">Giải pháp</section>
+<section id="review">Review</section>
+<section id="lotrinh">Lộ trình</section>
 
 </body>
 </html>
