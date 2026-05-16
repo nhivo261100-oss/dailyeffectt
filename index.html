@@ -1,124 +1,113 @@
-<!DOCTYPE html>
-<html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Navbar Center 1/3</title>
 
-<!-- FONT GILROY -->
+<link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+
 <style>
-@font-face {
-  font-family: 'SVN-Gilroy';
-  src: url('SVN-Gilroy-Bold.otf');
+
+body{
+  margin:0;
+  font-family:'Gilroy-Regular',sans-serif;
+  background:#0a0f1c;
 }
 
-body {
-  margin: 0;
-  font-family: 'SVN-Gilroy-Bold.otf', sans-serif;
-  background: #0a0f1c;
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+
+  background:
+  linear-gradient(90deg,#091524,#0b1020);
+
+  border-bottom:1px solid rgba(0,255,180,0.15);
+
+  overflow:hidden;
 }
 
-/* NAVBAR FULL */
-.navbar {
-  width: 100%;
-  height: 70px;
-  background: linear-gradient(90deg, #0b1c2c, #0a0f1c);
+/* grid background */
+.navbar::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-image:
+  linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+
+  background-size:40px 40px;
+
+  opacity:.7;
 }
 
-/* KHUNG GIỮA */
-.nav-inner {
-  width: 33%;
-  margin: 0 auto; /* 👉 CÁI NÀY LÀ CHÌA KHÓA */
-  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-}
-/* LOGO */
-.logo {
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
+/* khung giữa */
+.nav-inner{
+  position:relative;
+  z-index:2;
+
+  width:33%;
+  min-width:1050px;
+
+  height:100%;
+  margin:auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-/* MENU */
-.menu {
-  display: flex;
-  gap: 24px;
+/* logo */
+.logo{
+  color:#fff;
+  font-size:20px;
+  font-family:'Gilroy-Bold',sans-serif;
 }
 
-.menu a {
-  color: #9fb3c8;
-  text-decoration: none;
-  font-size: 13px;
-  transition: 0.3s;
+/* menu */
+.menu{
+  display:flex;
+  gap:28px;
 }
 
-.menu a:hover {
-  color: #ffffff;
+.menu a{
+  color:#8ea3b7;
+  text-decoration:none;
+  font-size:13px;
+  font-family:'Gilroy-Medium',sans-serif;
+
+  transition:.25s;
 }
 
-/* RIGHT */
-.right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.menu a:hover{
+  color:#fff;
 }
 
-.ai {
-  color: #00ffa3;
-  font-size: 13px;
+/* right */
+.right{
+  display:flex;
+  align-items:center;
+  gap:18px;
 }
 
-.btn {
-  background: linear-gradient(135deg, #00ffa3, #00c853);
-  padding: 7px 16px;
-  border-radius: 999px;
-  font-size: 13px;
-  color: #002b1a;
-  font-weight: 600;
+.ai{
+  color:#00f5a0;
+  font-size:13px;
+  font-family:'Gilroy-SemiBold',sans-serif;
 }
 
-/* SECTION TEST */
-section {
-  height: 100vh;
-  padding-top: 100px;
-  color: white;
-  text-align: center;
+.btn{
+  background:linear-gradient(135deg,#00ffb3,#00c97b);
+
+  color:#001a11;
+
+  padding:8px 18px;
+
+  border-radius:999px;
+
+  font-size:13px;
+
+  font-family:'Gilroy-Bold',sans-serif;
 }
+
 </style>
+
 </head>
-
-<body>
-
-<div class="navbar">
-  <div class="nav-inner">
-
-    <div class="logo">DailyEffect</div>
-
-    <div class="menu">
-      <a href="#boicanh">Bối cảnh</a>
-      <a href="#thitruong">Thị trường</a>
-      <a href="#hientrang">Hiện trạng</a>
-      <a href="#giaiphap">Giải pháp</a>
-      <a href="#review">Review & Duyệt</a>
-      <a href="#lotrinh">Lộ trình</a>
-    </div>
-
-    <div class="right">
-      <div class="ai">✦ AI Studio</div>
-      <div class="btn">Guideline</div>
-    </div>
-
-  </div>
-</div>
-
-<section id="boicanh">Bối cảnh</section>
-<section id="thitruong">Thị trường</section>
-<section id="hientrang">Hiện trạng</section>
-<section id="giaiphap">Giải pháp</section>
-<section id="review">Review</section>
-<section id="lotrinh">Lộ trình</section>
-
-</body>
-</html>
