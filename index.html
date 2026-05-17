@@ -159,6 +159,8 @@ width:100%;
 
     flex-direction:column;
 
+    align-items:center;
+
     gap:16px;
   }
 
@@ -170,6 +172,10 @@ width:100%;
     grid-template-columns:repeat(12, 1fr);
 
     row-gap:10px;
+
+    justify-items:center;
+
+    margin:0 auto;
   }
 
   .menu a{
@@ -178,6 +184,10 @@ width:100%;
     white-space:nowrap;
 
     text-align:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
 
   /* dòng 1 */
@@ -197,17 +207,17 @@ width:100%;
     grid-column:10 / 13;
   }
 
-  /* dòng 2 nằm giữa */
+  /* dòng 2 căn giữa chuẩn */
   .menu a:nth-child(5){
-    grid-column:3 / 6;
+    grid-column:2.5 / 5.5;
   }
 
   .menu a:nth-child(6){
-    grid-column:6 / 9;
+    grid-column:5.5 / 8.5;
   }
 
   .menu a:nth-child(7){
-    grid-column:9 / 12;
+    grid-column:8.5 / 11.5;
   }
 
   .guide-btn{
