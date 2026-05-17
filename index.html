@@ -163,19 +163,24 @@ width:100%;
   }
 
   .menu{
+    width:100%;
+
     display:grid;
 
-    grid-template-columns:repeat(4, auto);
+    grid-template-columns:repeat(4, max-content);
 
     justify-content:center;
 
-    gap:10px 14px;
+    column-gap:14px;
+    row-gap:10px;
   }
 
   .menu a{
     font-size:11px;
 
     white-space:nowrap;
+
+    text-align:center;
   }
 
   .guide-btn{
