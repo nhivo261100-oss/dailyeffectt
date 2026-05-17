@@ -167,19 +167,15 @@ width:100%;
   .menu{
     width:100%;
 
-    display:flex;
+    display:grid;
 
-    flex-direction:column;
+    grid-template-columns:repeat(12, 1fr);
 
-    align-items:center;
+    row-gap:10px;
 
-    gap:10px;
-  }
+    justify-items:center;
 
-  /* dòng 1 */
-  .menu::before{
-    content:"";
-    display:none;
+    margin:0 auto;
   }
 
   .menu a{
@@ -188,43 +184,40 @@ width:100%;
     white-space:nowrap;
 
     text-align:center;
-  }
 
-  /* 4 item đầu */
-  .menu a:nth-child(-n+4){
-    display:inline-flex;
-
+    display:flex;
     justify-content:center;
     align-items:center;
-
-    min-width:72px;
   }
 
-  /* 3 item cuối */
-  .menu a:nth-child(n+5){
-    display:inline-flex;
-
-    justify-content:center;
-    align-items:center;
-
-    min-width:72px;
+  /* dòng 1 */
+  .menu a:nth-child(1){
+    grid-column:1 / 4;
   }
 
-  /* tạo 2 hàng riêng */
-  .menu{
-    display:grid;
-
-    justify-content:center;
-
-    row-gap:10px;
+  .menu a:nth-child(2){
+    grid-column:4 / 7;
   }
 
-  .menu a:nth-child(-n+4){
-    grid-row:1;
+  .menu a:nth-child(3){
+    grid-column:7 / 10;
   }
 
-  .menu a:nth-child(n+5){
-    grid-row:2;
+  .menu a:nth-child(4){
+    grid-column:10 / 13;
+  }
+
+  /* dòng 2 căn giữa chuẩn */
+  .menu a:nth-child(5){
+    grid-column:2.5 / 5.5;
+  }
+
+  .menu a:nth-child(6){
+    grid-column:5.5 / 8.5;
+  }
+
+  .menu a:nth-child(7){
+    grid-column:8.5 / 11.5;
   }
 
   .guide-btn{
@@ -233,7 +226,6 @@ width:100%;
   }
 
 }
-
   </style>
 </head>
 
