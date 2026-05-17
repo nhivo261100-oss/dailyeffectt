@@ -165,44 +165,34 @@ width:100%;
   .menu{
     width:100%;
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:repeat(4, 1fr);
+    flex-wrap:wrap;
 
-    justify-items:center;
-    align-items:center;
+    justify-content:center;
 
-    row-gap:10px;
+    gap:10px 14px;
   }
 
   .menu a{
-    width:100%;
-
-    text-align:center;
-
     font-size:11px;
 
     white-space:nowrap;
+
+    text-align:center;
+
+    min-width:22%;
   }
 
+  /* hàng 2 căn giữa */
   .menu a:nth-child(5){
-    grid-column:1 / 2;
-  }
-
-  .menu a:nth-child(6){
-    grid-column:2 / 3;
-  }
-
-  .menu a:nth-child(7){
-    grid-column:3 / 4;
+    margin-left:12%;
   }
 
   .guide-btn{
     padding:8px 14px;
     font-size:12px;
   }
-
-}
 
 }
 
