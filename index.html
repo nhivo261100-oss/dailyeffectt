@@ -85,18 +85,19 @@
     0 0 24px rgba(0,0,0,0.35);
 }
 
-    /* logo */
-    .logo{
-      color:white;
-      font-size:20px;
-      font-weight:700;
-      letter-spacing:-0.5px;
-      white-space:nowrap;
-    }
+   .logo{
+  position:absolute;
+  left:60px;
 
-    .logo span{
-      font-weight:800;
-    }
+  display:flex;
+  align-items:center;
+}
+
+.logo img{
+  height:28px;
+  width:auto;
+  object-fit:contain;
+}
 
     /* menu */
     .menu{
@@ -174,9 +175,9 @@
 
   <nav class="navbar">
 
-    <div class="logo">
-      Daily<span>Effect</span>
-    </div>
+   <div class="logo">
+    <img src="./assets/logo.png" alt="Daily Effect Logo">
+  </div>
 
     <div class="menu">
       <a href="#">Bối cảnh</a>
