@@ -152,48 +152,45 @@ width:100%;
 
   .navbar{
     width:95%;
-    height:64px;
+    height:auto;
 
-    padding:0 16px;
+    padding:16px 20px;
 
-    flex-direction:row;
-    gap:0;
+    flex-direction:column;
 
-    overflow:hidden;
+    gap:16px;
   }
 
   .menu{
     flex:1;
 
-    width:auto;
+    display:grid;
 
-    gap:10px;
-
-    flex-wrap:nowrap;
-
-    overflow-x:auto;
+    grid-template-columns:repeat(4, auto);
 
     justify-content:center;
 
-    scrollbar-width:none;
-  }
+    row-gap:8px;
+    column-gap:14px;
 
-  .menu::-webkit-scrollbar{
-    display:none;
+    width:100%;
   }
 
   .menu a{
     font-size:11px;
+
+    text-align:center;
+
     white-space:nowrap;
   }
 
   .guide-btn{
-    padding:7px 12px;
-    font-size:11px;
+    padding:8px 14px;
+    font-size:12px;
   }
 
   .logo{
-    font-size:15px;
+    font-size:16px;
     white-space:nowrap;
   }
 
