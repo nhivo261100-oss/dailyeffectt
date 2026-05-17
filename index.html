@@ -152,32 +152,49 @@ width:100%;
 
   .navbar{
     width:95%;
-    padding:14px 20px;
+    height:64px;
 
-    height:auto;
+    padding:0 16px;
 
-    flex-direction:column;
-    gap:18px;
+    flex-direction:row;
+    gap:0;
+
+    overflow:hidden;
   }
 
   .menu{
-    gap:12px;
+    flex:1;
 
-    flex-wrap:wrap;
+    width:auto;
+
+    gap:10px;
+
+    flex-wrap:nowrap;
+
+    overflow-x:auto;
+
     justify-content:center;
+
+    scrollbar-width:none;
+  }
+
+  .menu::-webkit-scrollbar{
+    display:none;
   }
 
   .menu a{
     font-size:11px;
+    white-space:nowrap;
   }
 
   .guide-btn{
-    padding:8px 14px;
-    font-size:12px;
+    padding:7px 12px;
+    font-size:11px;
   }
 
   .logo{
-    font-size:16px;
+    font-size:15px;
+    white-space:nowrap;
   }
 
 }
