@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Navbar</title>
-
+  <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
+  rel="stylesheet"
+/>
   <style>
 
     /* ================= FONT ================= */
@@ -85,18 +88,27 @@
     0 0 24px rgba(0,0,0,0.35);
 }
 
- .logo{
+.logo{
   position:absolute;
   left:60px;
 
   display:flex;
   align-items:center;
+
+  font-size:20px;
+  line-height:1;
 }
 
-.logo img{
-  height:30px;
-  width:auto;
-  object-fit:contain;
+.logo .daily{
+  font-family:"Poppins", sans-serif;
+  font-weight:300;
+  color:white;
+}
+
+.logo .effect{
+  font-family:"Poppins", sans-serif;
+  font-weight:700;
+  color:white;
 }
     /* menu */
     .menu{
@@ -175,7 +187,7 @@
   <nav class="navbar">
 
 <div class="logo">
-  <img src="./logo.png" alt="Daily Effect Logo">
+  <span class="daily">Daily</span><span class="effect">Effect</span>
 </div>
 
     <div class="menu">
