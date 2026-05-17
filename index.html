@@ -170,6 +170,8 @@ width:100%;
     grid-template-columns:repeat(12, 1fr);
 
     row-gap:10px;
+
+    align-items:center;
   }
 
   .menu a{
@@ -197,22 +199,27 @@ width:100%;
     grid-column:10 / 13;
   }
 
-  /* dòng 2 nằm giữa */
+  /* dòng 2 */
   .menu a:nth-child(5){
-    grid-column:3 / 6;
+    grid-column:1 / 4;
   }
 
   .menu a:nth-child(6){
-    grid-column:6 / 9;
+    grid-column:4 / 7;
   }
 
   .menu a:nth-child(7){
-    grid-column:9 / 12;
+    grid-column:7 / 10;
   }
 
+  /* guideline cùng dòng 2 */
   .guide-btn{
-    padding:8px 14px;
-    font-size:12px;
+    grid-column:10 / 13;
+
+    padding:7px 12px;
+    font-size:11px;
+
+    justify-self:center;
   }
 
 }
