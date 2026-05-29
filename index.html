@@ -120,60 +120,69 @@ rel="stylesheet"
 
     /* ================= LOGO ================= */
 
-    .logo{
-      display:flex;
-      align-items:center;
+  /* LOGO */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:0;
+}
 
-      font-size:20px;
-      line-height:1;
+.daily{
+  color:#fff;
+  font-weight:300;
+}
 
-      white-space:nowrap;
-    }
+.effect{
+  color:#fff;
+  font-weight:700;
+}
 
-    .logo .daily{
-      font-family:"Poppins", sans-serif;
-      font-weight:300;
-      color:white;
-    }
 
-    .logo .effect{
-      font-family:"Poppins", sans-serif;
-      font-weight:700;
-      color:white;
-    }
 
     /* ================= MENU ================= */
 
+/* MENU */
 .menu{
   display:flex;
   justify-content:center;
   align-items:center;
-
-  gap:34px;
+  gap:32px;
 }
 
-    .menu a{
-      color:#9fa8b7;
+.menu a{
+  color:#ffffff;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+  transition:.2s;
+}
 
-      text-decoration:none;
+.menu a:hover{
+  color:#15D6B0;
+}
 
-      font-size:13px;
-      font-weight:500;
+.menu .active{
+  color:#15D6B0;
+  font-weight:700;
+}
 
-      transition:0.25s;
+/* BUTTON */
+.guide-btn{
+  justify-self:end;
 
-      white-space:nowrap;
-    }
+  background:#15D6B0;
+  color:#071223;
 
-    .menu a:hover{
-      color:white;
-    }
+  border:none;
+  border-radius:999px;
 
-    .menu .active{
-      color:#00e5a8;
-      font-weight:600;
-    }
+  padding:10px 20px;
 
+  font-size:14px;
+  font-weight:700;
+
+  cursor:pointer;
+}
     /* ================= BUTTON ================= */
 
     .guide-btn{
@@ -725,15 +734,14 @@ body{
   </div>
 
   <div class="menu">
-    <a href="#">Bối cảnh</a>
-    <a href="#">Thị trường</a>
-    <a href="#">Hiện trạng</a>
-    <a href="#">Giải pháp</a>
-    <a href="#">Quy trình duyệt</a>
-    <a href="#">Lộ trình</a>
-    <a href="#" class="active">⭐ AI Studio</a>
-  </div>
-
+  <a href="#">Bối cảnh</a>
+  <a href="#">Thị trường</a>
+  <a href="#">Hiện trạng</a>
+  <a href="#">Giải pháp</a>
+  <a href="#">Quy trình duyệt</a>
+  <a href="#">Lộ trình</a>
+  <a href="#" class="active">⭐ AI Studio</a>
+</div> 
   <button class="guide-btn">
     Guideline
   </button>
