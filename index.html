@@ -247,18 +247,12 @@ body{
 
 /* HERO */
 
-.hero{
+.hero {
     min-height: calc(100vh - 80px);
-    display:flex;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
 
-    background:
-    radial-gradient(circle at top right,
-    rgba(21,214,176,.12),
-    transparent 35%),
-    #061426;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero::before{
@@ -272,18 +266,17 @@ body{
     top:-150px;
     right:-150px;
 }
-.hero-container{
-    width:100%;
-    max-width:1280px;
-    margin:auto;
-    padding:0 80px;
-    position:relative;
-    z-index:2;
+.hero-container {
+    width: 100%;
+    max-width: 1000px;
 
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
 }
 
 .hero-badge{
