@@ -136,30 +136,40 @@ rel="stylesheet"
 
     /* ================= MENU ================= */
 
-/* MENU */
 .menu{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:32px;
-}
+      display:flex;
+      align-items:center;
+      justify-content:center;
 
-.menu a{
-  color:#ffffff;
-  text-decoration:none;
-  font-size:14px;
-  font-weight:500;
-  transition:.2s;
-}
+      gap:28px;
 
-.menu a:hover{
-  color:#15D6B0;
-}
+      flex:1;
+      flex:unset;
+width:100%;
+    }
 
-.menu .active{
-  color:#15D6B0;
-  font-weight:700;
-}
+    .menu a{
+      color:#9fa8b7;
+
+      text-decoration:none;
+
+      font-size:13px;
+      font-weight:500;
+
+      transition:0.25s;
+
+      white-space:nowrap;
+    }
+
+    .menu a:hover{
+      color:white;
+    }
+
+    .menu .active{
+      color:#00e5a8;
+      font-weight:600;
+    }
+
 
 /* BUTTON */
 .guide-btn{
@@ -255,25 +265,31 @@ rel="stylesheet"
 
 <body>
 
-<nav class="navbar">
+ <nav class="navbar">
 
-  <div class="logo">
-    <span class="daily">Daily</span>
-    <span class="effect">Effect</span>
-  </div>
-  <div class="menu">
-  <a href="#">Bối cảnh</a>
-  <a href="#">Thị trường</a>
-  <a href="#">Hiện trạng</a>
-  <a href="#">Giải pháp</a>
-  <a href="#">Quy trình duyệt</a>
-  <a href="#">Lộ trình</a>
-  <a href="#" class="active">⭐ AI Studio</a>
-</div> 
-  <button class="guide-btn">
-    Guideline
-  </button>
+    <div class="logo">
+      <span class="daily">Daily</span>
+      <span class="effect">Effect</span>
+    </div>
 
+    <div class="menu">
+      <a href="#">Bối cảnh</a>
+      <a href="#">Thị trường</a>
+      <a href="#">Hiện trạng</a>
+      <a href="#">Giải pháp</a>
+      <a href="#">Quy trình duyệt</a>
+      <a href="#">Lộ trình</a>
+      <a href="#" class="active">⭐ AI Studio</a>
+    </div>
+
+    <button class="guide-btn">
+      Guideline
+    </button>
+
+  </nav>
+
+</body>
+</html>
 
 
 
