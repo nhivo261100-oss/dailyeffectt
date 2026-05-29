@@ -226,11 +226,12 @@ width:100%;
 <title>Đề Xuất Cải Thiện Thumbnail TMĐT</title>
 
 <style>
-:root {
-    --bg-primary: #061426;
-    --mint: #15D6B0;
-    --white: #ffffff;
-    --text-secondary: rgba(255,255,255,.7);
+
+:root{
+    --bg:#061426;
+    --mint:#15D6B0;
+    --white:#FFFFFF;
+    --text:rgba(255,255,255,.7);
 }
 
 *{
@@ -239,50 +240,80 @@ width:100%;
     box-sizing:border-box;
 }
 
+html,
 body{
-    font-family: Inter, sans-serif;
-    background: var(--bg-primary);
-    color: var(--white);
+    width:100%;
+    height:100%;
+}
+
+body{
+    font-family:Inter, sans-serif;
+    background:var(--bg);
+    color:var(--white);
 }
 
 /* HERO */
 
-.hero {
-    min-height: calc(100vh - 80px);
+.hero{
+    position:relative;
+    min-height:100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(21,214,176,.15),
+        transparent 35%
+    ),
+    #061426;
 }
 
 .hero::before{
     content:"";
+
     position:absolute;
+
     width:500px;
     height:500px;
-    background:rgba(21,214,176,.08);
-    filter:blur(150px);
+
+    top:-180px;
+    right:-180px;
+
     border-radius:50%;
-    top:-150px;
-    right:-150px;
+
+    background:rgba(21,214,176,.08);
+
+    filter:blur(150px);
 }
-.hero-container {
-    width: 100%;
-    max-width: 1000px;
 
-    margin: 0 auto;
+.hero-container{
+    position:relative;
+    z-index:2;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width:100%;
+    max-width:1000px;
 
-    text-align: center;
+    padding:0 24px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
 }
+
+/* BADGE */
 
 .hero-badge{
-    display:inline-flex;
+    display:flex;
     align-items:center;
-    gap:16px;
+    gap:14px;
 
     padding:12px 24px;
 
@@ -292,7 +323,7 @@ body{
 
     background:rgba(21,214,176,.08);
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(12px);
 }
 
 .hero-badge span{
@@ -304,37 +335,47 @@ body{
 
 .divider{
     width:1px;
-    height:16px;
+    height:14px;
     background:rgba(255,255,255,.2);
 }
+
+/* TITLE */
+
 .hero-title{
     margin-top:32px;
-    max-width:1000px;
 
-    font-size:76px;
-    line-height:1.08;
+    max-width:900px;
+
+    font-size:72px;
     font-weight:800;
+    line-height:1.08;
 
     text-align:center;
 }
+
+.highlight{
+    display:block;
+    color:var(--mint);
+}
+
+/* DESCRIPTION */
 
 .hero-description{
     margin-top:28px;
 
-    max-width:760px;
+    max-width:700px;
 
     font-size:20px;
     line-height:1.8;
 
-    color:var(--text-secondary);
+    color:var(--text);
 
     text-align:center;
 }
-@media(max-width:768px){
 
-    .hero-container{
-        padding:0 24px;
-    }
+/* MOBILE */
+
+@media(max-width:768px){
 
     .hero-title{
         font-size:42px;
@@ -346,8 +387,10 @@ body{
 
     .hero-badge{
         flex-wrap:wrap;
+        justify-content:center;
     }
 }
+
 </style>
 </head>
 
@@ -359,9 +402,7 @@ body{
 
         <div class="hero-badge">
             <span>REBRANDING DAILY EFFECT</span>
-
             <div class="divider"></div>
-
             <span>THUMBNAIL PROMOTION</span>
         </div>
 
