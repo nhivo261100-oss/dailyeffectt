@@ -21,13 +21,21 @@ rel="stylesheet"
   box-sizing:border-box;
 
   font-family:"Montserrat", sans-serif;
-}body{
-  background:#071223;
-  min-height:100px;
-  overflow-x:hidden;
-
-  font-family:"Montserrat",sans-serif;
 }
+
+    body{
+      background:#071223;
+
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+
+      min-height:100vh;
+      padding-top:20px;
+
+      overflow-x:hidden;
+    }
+
     
 /* ================= NAVBAR ================= */
 
@@ -114,25 +122,27 @@ rel="stylesheet"
 
 
     /* ================= LOGO ================= */
+    .logo{
+      display:flex;
+      align-items:center;
 
-  /* LOGO */
-.logo{
-  display:flex;
-  align-items:center;
-  gap:0;
-}
+      font-size:20px;
+      line-height:1;
 
-.daily{
-  color:#fff;
-  font-weight:300;
-}
+      white-space:nowrap;
+    }
 
-.effect{
-  color:#fff;
-  font-weight:700;
-}
+    .logo .daily{
+      font-family:"Poppins", sans-serif;
+      font-weight:300;
+      color:white;
+    }
 
-
+    .logo .effect{
+      font-family:"Poppins", sans-serif;
+      font-weight:700;
+      color:white;
+    }
 
     /* ================= MENU ================= */
 
@@ -190,7 +200,7 @@ width:100%;
 }
     /* ================= BUTTON ================= */
 
-    .guide-btn{
+   .guide-btn{
       background:#00d48f;
       color:#03141f;
 
@@ -214,6 +224,7 @@ width:100%;
       transform:translateY(-1px);
       opacity:0.9;
     }
+
 
     /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
