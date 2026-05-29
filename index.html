@@ -767,12 +767,198 @@ body{
   </div>
 
 
-</nav>
+<!DOCTYPE html>
 
-<section class="hero">
-</section>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</body>
+<title>Đề Xuất Cải Thiện Thumbnail TMĐT</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --bg:#071223;
+  --mint:#15D6B0;
+  --white:#ffffff;
+  --text:rgba(255,255,255,.7);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--white);
+  font-family:"Montserrat",sans-serif;
+  overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+  width:95%;
+  max-width:1500px;
+
+  height:64px;
+
+  margin:20px auto;
+
+  background:rgba(7,18,35,.95);
+
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:8px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:0 32px;
+}
+
+.logo{
+  display:flex;
+  font-size:20px;
+}
+
+.daily{
+  font-family:"Poppins",sans-serif;
+  font-weight:300;
+}
+
+.effect{
+  font-family:"Poppins",sans-serif;
+  font-weight:700;
+}
+
+.menu{
+  display:flex;
+  gap:28px;
+}
+
+.menu a{
+  color:#9fa8b7;
+  text-decoration:none;
+  font-size:13px;
+}
+
+.menu a:hover{
+  color:white;
+}
+
+.active{
+  color:var(--mint) !important;
+}
+
+.guide-btn{
+  background:#15D6B0;
+  color:#071223;
+
+  border:none;
+  border-radius:999px;
+
+  padding:10px 18px;
+
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+  min-height:calc(100vh - 100px);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+}
+
+.hero-container{
+  max-width:1000px;
+  padding:0 24px;
+}
+
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+
+  padding:12px 24px;
+
+  border-radius:999px;
+
+  border:1px solid rgba(21,214,176,.25);
+
+  background:rgba(21,214,176,.08);
+}
+
+.hero-badge span{
+  color:var(--mint);
+  font-size:12px;
+  letter-spacing:2px;
+  font-weight:700;
+}
+
+.divider{
+  width:1px;
+  height:14px;
+  background:rgba(255,255,255,.2);
+}
+
+.hero-title{
+  margin-top:30px;
+  font-size:64px;
+  line-height:1.05;
+  font-weight:800;
+}
+
+.highlight{
+  display:block;
+  color:var(--mint);
+}
+
+.hero-description{
+  max-width:720px;
+  margin:24px auto 0;
+
+  color:var(--text);
+  line-height:1.8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+  <div class="logo">
+    <span class="daily">Daily</span>
+    <span class="effect">Effect</span>
+  </div>
+
+  <div class="menu">
+    <a href="#">Bối cảnh</a>
+    <a href="#">Thị trường</a>
+    <a href="#">Hiện trạng</a>
+    <a href="#">Giải pháp</a>
+    <a href="#">Quy trình duyệt</a>
+    <a href="#">Lộ trình</a>
+    <a href="#" class="active">⭐ AI Studio</a>
+  </div>
+
+  <button class="guide-btn">
+    Guideline
+  </button>
 
 </nav>
 
@@ -782,9 +968,7 @@ body{
 
 <div class="hero-badge">
   <span>REBRANDING DAILY EFFECT</span>
-
   <div class="divider"></div>
-
   <span>THUMBNAIL PROMOTION</span>
 </div>
 
@@ -806,4 +990,3 @@ body{
 
 </body>
 </html>
-
