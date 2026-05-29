@@ -212,3 +212,179 @@ width:100%;
 
 </body>
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Đề Xuất Cải Thiện Thumbnail TMĐT</title>
+
+<style>
+:root {
+    --bg-primary: #061426;
+    --mint: #15D6B0;
+    --white: #ffffff;
+    --text-secondary: rgba(255,255,255,.7);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    background: var(--bg-primary);
+    color: var(--white);
+}
+
+/* HERO */
+
+.hero{
+    min-height: calc(100vh - 80px);
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(21,214,176,.12),
+    transparent 35%),
+    #061426;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(21,214,176,.08);
+    filter:blur(150px);
+    border-radius:50%;
+    top:-150px;
+    right:-150px;
+}
+
+.hero-container{
+    width:100%;
+    max-width:1280px;
+    margin:auto;
+    padding:0 80px;
+    position:relative;
+    z-index:2;
+}
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:16px;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(21,214,176,.25);
+
+    background:rgba(21,214,176,.08);
+
+    backdrop-filter:blur(10px);
+}
+
+.hero-badge span{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:var(--mint);
+}
+
+.divider{
+    width:1px;
+    height:16px;
+    background:rgba(255,255,255,.2);
+}
+
+.hero-title{
+    margin-top:32px;
+    max-width:1000px;
+
+    font-size:76px;
+    line-height:1.08;
+    font-weight:800;
+}
+
+.hero-title .highlight{
+    display:block;
+    color:var(--mint);
+}
+
+.hero-description{
+    margin-top:28px;
+
+    max-width:760px;
+
+    font-size:20px;
+    line-height:1.8;
+
+    color:var(--text-secondary);
+}
+
+@media(max-width:768px){
+
+    .hero-container{
+        padding:0 24px;
+    }
+
+    .hero-title{
+        font-size:42px;
+    }
+
+    .hero-description{
+        font-size:16px;
+    }
+
+    .hero-badge{
+        flex-wrap:wrap;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-badge">
+            <span>REBRANDING DAILY EFFECT</span>
+
+            <div class="divider"></div>
+
+            <span>THUMBNAIL PROMOTION</span>
+        </div>
+
+        <h1 class="hero-title">
+            ĐỀ XUẤT CẢI THIỆN
+            <span class="highlight">
+                THUMBNAIL SÀN TMĐT
+            </span>
+        </h1>
+
+        <p class="hero-description">
+            Phân tích hiện trạng thumbnail Daily Effect, xu hướng thị trường và đề xuất giải pháp nâng cao khả năng thu hút, nhận diện thương hiệu và hiệu quả chuyển đổi trên các sàn thương mại điện tử.
+        </p>
+
+    </div>
+
+</section>
+
+</body>
+</html>
